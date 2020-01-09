@@ -13,11 +13,18 @@
 #endif
 
 int main(void) {
-    /* Insert DDR and PORT initializations */
-
-    /* Insert your solution below */
-    while (1) {
-
-    }
-    return 1;
+    /* Insert DDR and PORT initializations *
+        DDRB = 0xFF; // Configure port B's 8 pins as outputs
+ 	PORTB = 0x00; // Initialize PORTB output to 0’s
+        unsigned char tmpB = 0x00; // Temporary variable to hold the value of B
+        unsigned char tmpA = 0x00; // Temporary variable to hold the value of A
+        while(1) {
+            
+*/
+   return 1;
 }
+
+
+
+
+  
