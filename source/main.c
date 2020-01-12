@@ -13,18 +13,14 @@
 #endif
 
 int main(void) {
-    /* Insert DDR and PORT initializations *
-        DDRB = 0xFF; // Configure port B's 8 pins as outputs
- 	PORTB = 0x00; // Initialize PORTB output to 0’s
-        unsigned char tmpB = 0x00; // Temporary variable to hold the value of B
-        unsigned char tmpA = 0x00; // Temporary variable to hold the value of A
-        while(1) {
-            
-*/
-   return 1;
+   DDRA = 0x00; PORTA = 0xFF; // Configure port A's 8 pins as inputs
+   DDRB = 0xFF; PORTB = 0x00; // Configure port B's 8 pins as outputs
+                              // Initialize output on PORTB to 0x00
+
+   unsigned char temp_input = 0x00;
+   while(1) {
+       temp_input = PINA; // Writes port B's to 8 pins with the values
+       PORTB = temp_input;// on port A's 8 pins
 }
-
-
-
-
-  
+    return 1;
+ 
